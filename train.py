@@ -25,7 +25,7 @@ def fit_and_save_model(cls, model_name: str, X, y):
 def get_values() -> Tuple[ndarray, ndarray]:
     df = read_csv('./heart.csv')
     X = df[['age', 'sex', 'fbs']].values
-    y = df['cp'].values
+    y = df['target'].values
     return X, y
 
 def main():
